@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Inter;
+    src: url("font/Inter.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: LexendDeca;
+    src: url("font/LexendDeca.ttf") format("truetype");
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: hsl(233, 47%, 7%);
+}
+
+.all {
+    width: 1000px;
+    height: 400px;
+    background: hsl(244, 38%, 16%);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.image {
+    width: 540px;
+    height: 400px;
+    float: left;
+    opacity: 0.5;
+    background: linear-gradient(to top, #3204fdba, #9907facc),
+                url("images/image-header-desktop.jpg") no-repeat top;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.content {
+    width: 50%;
+    float: right;
+    margin: 4% 3% 3% 5%;
+}
+
+.content h1 {
+    color: white;
+}
+
+.content em {
+    color: hsl(277, 64%, 61%);
+}
+
+.content p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 7%;
+    margin-bottom: 12%;
+    font-family: LexendDeca, sans-serif;
+}
+
+#stats {
+    color: white;
+    display: flex;
+}
+
+#stats span {
+    display: table-cell;
+    margin-right: 25%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#stats .s {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+    font-size: 12px;
+    font-family: LexendDeca, sans-serif;
+}
